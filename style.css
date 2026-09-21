@@ -7,7 +7,8 @@
 body {
     background: linear-gradient(rgb(1, 1, 43));
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
@@ -73,4 +74,44 @@ input {
 
 }
 
-@media (max-width:2560px) {}
+@media (max-width:768px) {
+    .sign-up {
+        height: 400px;
+        width: 400px;
+    }
+
+    input {
+        width: 250px;
+        height: 30px;
+        margin-left: 50px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        border: none;
+        background-color: white;
+        outline: none;
+        padding: 20px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .sign-up{
+        width: 300px;
+        height: 400px;
+    }
+    .sign-up>h1{
+        font-size: 30px;
+    }
+    input{
+        width: 200px;
+        margin-left: 25px;
+    }
+    .buttons>button{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+}
